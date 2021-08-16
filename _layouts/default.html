@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description }}">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #b3bdd1;
+        }
+
+        .main {
+            background-color: #ffffff;
+        }
+
+        header,
+        footer {
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        header,
+        main,
+        footer,
+        table,
+        th,
+        td {
+            border: solid 1px black;
+        }
+
+        section,
+        td {
+            padding: 10px;
+        }
+
+        @media only screen and (min-width: 700px) {
+            .main {
+                margin: auto;
+                width: 600px;
+            }
+        }
+
+        a {
+            color: #3c5279;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #2d3441;
+            }
+
+            .main {
+                background-color: #181D27;
+                color: #b4b4b4;
+            }
+
+            header,
+            footer {
+                background-color: #11161f;
+            }
+
+            a {
+                color: #657da5;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        {{ content }}
+    </div>
+</body>
+
+</html>
